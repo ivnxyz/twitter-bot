@@ -10,7 +10,7 @@ class TweepyWrapper:
     # Almacenar referencia a la API
     self.api = tweepy.API(auth)
   
-  def get_weet_by_id(self, tweet_id):
+  def get_tweet_by_id(self, tweet_id):
     # Obtiene un tweet por su id
     return self.api.get_status(tweet_id)
 

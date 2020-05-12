@@ -20,7 +20,7 @@ class MentionsListener(tweepy.StreamListener):
         print(previous_tweet.text)
 
         # Responder al tweet
-        self.tweepy_wrapper.reply_to_tweet(tweet.user.screen_name, memefy(previous_tweet.text))
+        self.tweepy_wrapper.reply_to_tweet(tweet.user.screen_name, tweet.id,memefy(previous_tweet.text))
   
   def on_error(self, status):
     print("Se detectó un error", status)

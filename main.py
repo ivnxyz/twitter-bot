@@ -1,4 +1,5 @@
 # Importar dependencias
+import tweepy
 from tweepy_wrapper import TweepyWrapper
 from mentions_listener import MentionsListener
 from credentials import CREDENTIALS
